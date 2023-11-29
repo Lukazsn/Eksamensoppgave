@@ -69,7 +69,7 @@ body {
 .content-overlay {
     position: relative;
     left: 50%;
-    transform: translate(-50%, 50%); /* denne er foreslatt av github copilot, og gjorde så jeg kunne bevege elementet både horisontalt og vertikalt noe jeg synes jeg trengte*/
+    transform: translate(-50%, 50%); /* denne er foreslatt av github copilot, og gjorde så jeg kunne bevege elementet både horisontalt og vertikalt noe jeg synes jeg trengte */
     text-align: center;
     color: #000000;
 }
