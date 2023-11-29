@@ -69,7 +69,7 @@ body {
 .content-overlay {
     position: relative;
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%); /* denne er foreslatt av github copilot, og gjorde så jeg kunne bevege elementet både horisontalt og vertikalt noe jeg synes jeg trengte*/
     text-align: center;
     color: #000000;
 }
@@ -191,7 +191,7 @@ footer h2 {
 }
 
 .service {
-    flex: 1 0 calc(25% - 20px);
+    flex: 1 0 calc(25% - 20px);   /* github copilot foreslo denne for meg, og jeg synes den funket bra, så jeg har brukt denne gjengående i koden under */
     margin-bottom: 20px;
     text-align: center;
     box-sizing: border-box;
@@ -549,7 +549,7 @@ figure:hover {
     transform: scale(1.1);
 }
 
-
+ /* brukte chagpt akkurat her fordi jeg ikke hadde noen anelse på hvordan jeg skulle få en separat seksjon for "about our company" layered over bildet. */
 .about-section2 {
     position: absolute;
     top: 45%;
@@ -713,6 +713,111 @@ h2 {
 
 .icon-text {
     font-size: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        text-align: center;
+    }
+
+    .menu {
+        display: block;
+        text-align: center;
+    }
+
+    .menu a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+
+    .portfolio-title {
+        padding: 150px;
+    }
+
+    .about-section2 {
+        top: 55%;
+        line-height: 1.5;
+    }
+
+    .about-section2 p {
+        font-size: 8px;
+        line-height: 1.5;
+    }
+
+
+    .portfolio-title h1 {
+        font-size: 40px;
+        top: -20px;
+    }
+
+    .services-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service {
+        margin-bottom: 20px;
+    }
+
+    .explore-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .yellow-line {
+       top: 180px;
+    }
+
+
+    .image-container, .image-container2, .image-container3 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .about-section2 {
+        width: 50%;
+    }
+
+/* Brukte noe chagpt nedenfor fordi jeg først hadde problemer med å få contact seksjonen under "send us a message" til å bli stacked vertikalt på mobil*/
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 15px;
+    }
+
+
+    .contact-form, .contact-info {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        padding-left: 0;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form label, .contact-form textarea, .contact-form button {
+        margin-bottom: 15px;
+    }
+
+    .contact-info .contact-info-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
 
 
