@@ -818,6 +818,15 @@ h2 {
         justify-content: center;
     }
 
+    .image-container figure:hover img {
+        max-width: 692px;
+        transition: max-width 0.3s ease-in-out;
+    }
+
+    .image-container2 figure:hover img, .image-container3 figure:hover img {
+        max-width: 692px;
+        transition: max-width 0.3s ease-in-out;
+    }
 }
 
 
