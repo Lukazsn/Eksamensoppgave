@@ -3,7 +3,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
 
 }
 
@@ -32,7 +32,7 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 
@@ -41,24 +41,46 @@ body {
     border: none;
     background-color: #e6bd43;
     color: #000000;
-    font-size: 16px;
+    font-size: 22px;
     cursor: pointer;
     font-weight: bold;
 }
 
 .content-section {
+    position: relative;
     text-align: center;
     padding: 40px;
     background-color: #e6e6e6;
+    padding-bottom: 400px;
+}
+
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.content-overlay {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    color: #000000;
 }
 
 .content-section h1 {
-    font-size: 36px;
+    font-size: 44px;
     font-weight: bold;
 }
 
 .content-section p {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .content-section button {
@@ -66,7 +88,7 @@ body {
     border: none;
     background-color: #e6bd43;
     color: #000000;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     font-weight: bold;
 }
@@ -89,20 +111,20 @@ body {
 
 .section-divider {
     border-top: 1px solid #000000;
-    margin: 20px 0;
+    margin: 0;
     height: 0;
 }
 
 .about-section {
     text-align: center;
     padding: 40px;
-    background-color: #ffffff;
+    background-color: #e6bd43;
 }
 
 .placeholder-image {
     width: 300px;
     height: 300px;
-    background-color: #c7c7c7;
+    background-color: #d4d4d4;
     vertical-align: middle;
     display: inline-block;
     margin-right: 20px;
@@ -111,6 +133,7 @@ body {
     display: inline-block;
     text-align: left;
     vertical-align: middle;
+    
 }
 
 .about-content h2 {
@@ -136,8 +159,10 @@ body {
 
 .section-divider2 {
     border-top: 1px solid #000000;
-    margin: 20px 0;
+    margin: 0;
     height: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 footer {
@@ -145,6 +170,12 @@ footer {
     margin: 0;
     padding: 0;
 
+}
+
+
+footer h2 {
+    font-size: 40px;
+    font-weight: bold;
 }
 
 
@@ -176,11 +207,11 @@ footer {
 .newsletter {
     text-align: center;
     padding: 40px;
-    background-color: #dfdfdf;
+    background-color: #e7e7e7;
 }
 
 .newsletter h2 {
-    font-size: 24px;
+    font-size: 42px;
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -232,17 +263,457 @@ footer {
     text-align: center;
     color: #ffffff;
     font-size: 22px;
+    margin: 0;
 }
 
 .footer-content .social-media a {
     text-align: right;
     width: 15%;
-    font-size: 22px;
+    font-size: 44px;
     color: #ffffff;
     text-decoration: none;
+}
+
+.company-copyright {
+    font-size: 22px;
+    text-align: center;
+    margin: 20px 0;
 }
 
 .social-media p {
     margin: 0;
 }
+
+.social-media a i {
+    font-size: 84px;
+}
+button:hover {
+    background-color: #000000;
+    color: #e6bd43;
+}
+
+.material-symbols-outlined {
+    font-size: 30px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+
+.portfolio-title {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.portfolio-title h1 {
+    font-size: 70px;
+    color: #e4e4e4;
+    font-weight: bold;
+    position: relative;
+    top: -40px;
+    margin: 20px 0 0;
+    padding: 0;
+    
+}
+
+
+.explore {
+    text-align: left;
+    margin: 40px 60px 0;
+    position: relative;
+
+}
+
+.explore h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color:#000000;
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 0px;
+    margin: 0;
+    position: relative;
+}
+
+.yellow-line {
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 100%;
+    height: 3px;
+    background-color: #e6bd43;
+}
+
+.explore-buttons {
+    display: flex;
+    bottom: -80px;
+    position: relative;
+    justify-content: flex-start;
+    gap: 20px;
+    z-index: 1;
+    
+}
+
+.explore-buttons button.explore-button {
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.explore-buttons button.explore-button:hover {
+    background-color: #000000;
+    color: #e6bd43;
+}
+
+.branding-section {
+    text-align: left;
+    margin: 30px 60px 0;
+    position: relative;
+}
+.branding-section h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color:#000000;
+    top: 100px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.branding-section .yellow-line {
+    position: absolute;
+    left: 0;
+    bottom: -150px;
+    width: 100%;
+    height: 3px;
+    background-color: #e6bd43;
+}
+
+.image-container {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+figure {
+    text-align: center;
+    margin-bottom: 20px;
+    flex: 1 0 calc(30% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.single-image {
+    box-sizing: border-box;
+    flex: 0 0 calc(50% - 20px);
+    margin-top: 20px;
+    margin-right: 930px;
+
+}
+
+figure:hover {
+    transform: scale(1.1);
+}
+
+
+.design-section {
+    text-align: left;
+    margin: 40px 60px 50px;
+    position: relative;
+}
+
+.design-section h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color:#000000;
+    top: -20px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.design-section .yellow-line-design {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    bottom: -20px;
+    height: 3px;
+    background-color: #e6bd43;
+}
+
+.image-container2 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image-container2 figure {
+    text-align: center;
+    margin-bottom: 20px;
+    flex: 1 0 calc(20% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container2 figure img {
+    width: 100%;
+    height: auto;
+}
+
+.image-container2 figure figcaption {
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.image-container2 figure:hover {
+    transform: scale(1.1);
+}
+
+
+.development-section {
+    text-align: left;
+    margin: 40px 60px 50px;
+    position: relative;
+}
+
+.development-section h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color:#000000;
+    top: -20px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+
+.development-section .yellow-line-development {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    bottom: -150px;
+    height: 3px;
+    background-color: #e6bd43;
+}
+
+.image-container3 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image-container3 figure {
+    text-align: center;
+    margin-bottom: 20px;
+    flex: 1 0 calc(20% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container3 figure img {
+    width: 100%;
+    height: auto;
+}
+
+.image-container3 figure figcaption {
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.image-container3 figure:hover {
+    transform: scale(1.1);
+}
+
+
+.about-section2 {
+    position: absolute;
+    top: 45%;
+    right: 26%;
+    bottom: 5%;
+    transform: translate(50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: left;
+    max-width: 870px;
+}
+
+.company-name {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.about-section2 h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-section2 p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    font-weight: 600;
+
+}
+
+.about-our-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e6bd43;
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.about-our-button:hover {
+    background-color: #000000;
+    color: #e6bd43;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.clients-section {
+    background-color: #e6bd43;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.client-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-logo img {
+    width: 10%;
+    margin: 0 40px;
+}
+
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    padding: 40px 250px;
+    background-color: #ffffff;
+}
+
+.contact-section h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.contact-form form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.contact-form h3,
+.contact-info h3 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.contact-info p {
+    font-size: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 5px 5px 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.contact-form button {
+    width: 30%;
+    padding: 10px 20px;
+    border: none;
+    background-color: #e6bd43;
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #000000;
+    color: #e6bd43;
+}
+
+
+.contact-info-icons {
+    margin-top: 20px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.material-symbols-outlined {
+    font-size: 30px;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.icon-text {
+    font-size: 20px;
+}
+
+
 
